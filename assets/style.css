@@ -5,7 +5,9 @@
   --color-primary: #ff7575;
   --color-secondary: #ffb3b3;
   --color-tertiary: #0f1217;
-  --color-quaternary: #909090;
+  --color-grey-1: #909090;
+  --color-grey-2: #4d4d4d;
+  --color-blue: #4699e0;
 }
 
 /* BASE STYLES */
@@ -13,11 +15,13 @@ body {
   font-family: "Arial", sans-serif;
   margin: 0;
   box-sizing: border-box;
-  background-color: #232830;
+  background-color: var(--color-black);
+  color: var(--color-white);
 }
 
 a {
   text-decoration: none;
+  color: var(--color-white);
 }
 
 h1,
@@ -49,6 +53,10 @@ ul {
   margin: 0 auto;
 }
 
+.section {
+  padding: 40px 0;
+}
+
 .grid {
   display: grid;
 }
@@ -57,12 +65,109 @@ ul {
   grid-template-columns: 1fr 1fr 1fr;
 }
 
+.grid-gap-36 {
+  gap: 36px;
+}
+
 .row {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
 
+.row-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.column-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 /* COMPONENTS */
+.header {
+  padding: 20px 0;
+}
+
+.footer {
+  padding: 40px 0 80px;
+  margin-top: 60px;
+}
+
+.hero {
+  padding: 40px 0;
+}
+
+.tag {
+  padding: 4px 8px;
+  border-radius: 4px;
+  background-color: var(--color-blue);
+}
+
+.article {
+  padding: 20px;
+  border-radius: 20px;
+  color: var(--color-black);
+  background-color: var(--color-white);
+}
+
+.article img {
+  width: 100%;
+  height: 160px;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.pagination {
+  font-style: italic;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+  padding: 20px;
+}
+
+.pagination a {
+  color: var(--color-grey-1);
+}
+
+.pagination a.active {
+  color: var(--color-primary);
+}
+
+.button-icon {
+  padding: 0;
+  background-color: transparent;
+  border: none;
+}
+
+.switch-layout-blog {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+}
+
+.filters {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+  color: var(--color-grey-1);
+  padding: 0 20px;
+}
 
 /* UTILITIES */
+.line-top {
+  border-top: 1px solid var(--color-grey-2);
+}
+
+.padding-80 {
+  padding: 80px 0;
+}
+
+.padding-10 {
+  padding: 10px;
+}
