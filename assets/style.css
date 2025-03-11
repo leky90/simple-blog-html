@@ -1,0 +1,68 @@
+/* CSS VARIABLES */
+:root {
+  --color-black: #232830;
+  --color-white: #ffffff;
+  --color-primary: #ff7575;
+  --color-secondary: #ffb3b3;
+  --color-tertiary: #0f1217;
+  --color-quaternary: #909090;
+}
+
+/* BASE STYLES */
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: #232830;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+}
+
+ul {
+  padding-left: 0;
+}
+
+/* TYPOGRAPHY */
+.font-primary {
+  font-family: "Arial", sans-serif;
+}
+
+.font-secondary {
+  font-family: "Times New Roman", sans-serif;
+}
+
+/* LAYOUT */
+.container {
+  width: 100%;
+  max-width: 1244px;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+}
+
+.grid-cols-3 {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+/* COMPONENTS */
+
+/* UTILITIES */
